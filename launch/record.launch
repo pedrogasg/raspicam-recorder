@@ -30,7 +30,9 @@
         type="record"
         name="$(arg node_name)_bag"
         output="screen"
-        args="-o $(arg bag_location)/$(arg node_name)/  /$(arg node_name)/image/compressed"
-   />
+        args="-o $(arg bag_location)/$(arg node_name)/images  /$(arg node_name)/image/compressed"
+   >
+    <param name="mkdir_dir" command="mkdir -m 777 -p $(arg bag_location)/$(arg node_name)" />
+   </node>
 
 </launch>
