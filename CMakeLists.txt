@@ -4,12 +4,7 @@ project(raspicam_recorder)
 find_package(catkin REQUIRED COMPONENTS
   raspicam_node
 )
-
-install(TARGETS raspicam_recorder
-  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+catkin_package()
 
 install(DIRECTORY
   launch
