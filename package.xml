@@ -10,8 +10,6 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <depend>raspicam_node</depend>
-  <exec_depend>raspicam_node</exec_depend>
-
   <export>
   </export>
 </package>
