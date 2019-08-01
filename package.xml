@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>raspicam_recorder</name>
+  <version>0.0.1</version>
+  <description>Package to record the Raspberry Pi Camera in a rosbag.</description>
+
+  <maintainer email="pedro.fillastre@gmail.com">Pedro Fillastre</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>raspicam_node</depend>
+  <exec_depend>raspicam_node</exec_depend>
+
+  <export>
+  </export>
+</package>
