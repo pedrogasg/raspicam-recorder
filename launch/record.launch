@@ -6,6 +6,7 @@
   <arg name="camera_name" default="camerav2_410x308"/>
   <arg name="node_name" default="raspicam_node" />
   <arg name="bag_location" default="/tmp" />
+  <arg name="inverse_camera" default="false" />
 
   <node type="raspicam_node" pkg="raspicam_node" name="$(arg node_name)" output="screen">
     <param name="private_topics" value="true"/>
@@ -19,7 +20,8 @@
     <param name="camera_name" value="$(arg camera_name)"/>
     <param name="width" value="410"/>
     <param name="height" value="308"/>
-
+    <param name="vFlip" value="$(arg inverse_camera)"/>
+    <param name="hFlip" value="$(arg inverse_camera)"/>
     <param name="framerate" value="30"/>
     <param name="exposure_mode" value="antishake"/>
     <param name="shutter_speed" value="0"/>
